@@ -6,6 +6,4 @@ const interventionSchema = mongoose.Schema({
   lieu: { type: String, required: false }
 });
 
-interventionSchema.plugin(uniqueValidator);
-
-module.exports = mongoose.model('Agent', interventionSchema);
+module.exports = mongoose.model('Intervention', interventionSchema);

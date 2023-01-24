@@ -20,7 +20,6 @@ exports.getAgentsIntervention = (req, res, next) => {
 //CREATION INTERVENTION
 exports.addintervention = (req, res, next) => {
     const intervention = new Intervention({
-        _id: req.params.id,
         motif: req.body.motif,
         lieu: req.body.lieu,
         date: req.body.date

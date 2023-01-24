@@ -1,9 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const interventionRoutes = require('./routes/intervention');
-const Intervention = require('./models/Intervention');
 const agentRoutes = require('./routes/agent');
-const Agent = require('./models/agent');
 
 mongoose.set("strictQuery", false);
 mongoose.connect('mongodb+srv://admin:admin@cluster0.ij0ogsd.mongodb.net/?retryWrites=true&w=majority',
